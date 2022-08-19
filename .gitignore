@@ -11,3 +11,5 @@ uploads/*
 !uploads/.gitkeep
 
 ormconfig.json
+
+/src/shared/typeorm/migrations

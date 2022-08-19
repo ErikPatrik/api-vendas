@@ -10,8 +10,9 @@
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "strict": true,
+        "strictPropertyInitialization": false,
         "resolveJsonModule": true,
-        "skipLibCheck": true
+        "skipLibCheck": true,
     },
     "include": [
         "src/**/*"
