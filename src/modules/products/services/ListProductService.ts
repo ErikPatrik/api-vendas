@@ -1,7 +1,7 @@
 import { getCustomRepository } from "typeorm"
-import AppError from "../../../../shared/errors/AppError"
-import Product from "../entities/Product"
-import { ProductRepository } from "../repositories/ProductsRepository"
+import AppError from "../../../shared/errors/AppError"
+import Product from "../typeorm/entities/Product"
+import { ProductRepository } from "../typeorm/repositories/ProductsRepository"
 
 class ListProductService {
     public async execute(): Promise<Product[]> {

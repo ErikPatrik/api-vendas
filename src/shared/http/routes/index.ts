@@ -1,5 +1,5 @@
 import { Router } from "express";
-import productsRouter from "../../../modules/products/typeorm/routes/products.route";
+import productsRouter from "../../../modules/products/routes/products.route";
 
 const routes = Router()
 
