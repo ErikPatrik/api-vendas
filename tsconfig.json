@@ -22,9 +22,13 @@
         "**/*.test.ts"
     ],
     "baseUrl": "./",
+    "typeRoots": [
+        "@types",
+        "./node_modules/@types"
+    ],
     "paths": {
         "@config/*": ["src/config/*"],
         "@modules/*": ["src/modules/*"],
         "@shared/*": ["src/shared/*"],
-    }
+    },
 }
