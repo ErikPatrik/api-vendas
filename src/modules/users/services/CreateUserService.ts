@@ -1,7 +1,7 @@
 import { getCustomRepository } from "typeorm"
 import AppError from "../../../shared/errors/AppError"
 import User from "../typeorm/entities/Users"
-import UsersRepository from "../typeorm/repositories/UsersRepository"
+import { UsersRepository } from "../typeorm/repositories/UsersRepository"
 
 interface Irequest {
     name: string
