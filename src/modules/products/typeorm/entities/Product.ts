@@ -6,6 +6,9 @@ class Product {
     @PrimaryGeneratedColumn()
     id: string;
 
+    @OneToMany(() => OrdersProducts, order_products => order_products.product) // one products to many orders products
+    order_products: OrdersProducts[]
+
     @Column()
     name: string;
 
@@ -20,9 +23,6 @@ class Product {
 
     @UpdateDateColumn()
     updated_at: Date;
-
-    @OneToMany(() => OrdersProducts, order_products => order_products.product_id) // one products to many orders products
-    order_products: OrdersProducts[]
 }
 
 export default Product
