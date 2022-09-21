@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "build": "tsc",
-        "dev": "ts-node-dev --respawn --inspect --transpile-only --ignore-watch node_modules src/shared/http/server.ts",
+        "dev": "ts-node-dev --respawn --inspect --transpile-only --ignore-watch node_modules src/shared/infra/http/server.ts",
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint . --ext .ts",
         "lint-fix": "eslint . --ext .ts --fix",

@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction, response } from 'express'
 import Redis from 'ioredis'
 import { RateLimiterRedis } from 'rate-limiter-flexible'
-import AppError from '../../errors/AppError'
+import AppError from '../../../errors/AppError'
 
 export default async function rateLimiter(
     request: Request,

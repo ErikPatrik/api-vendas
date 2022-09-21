@@ -6,9 +6,9 @@ import cors from 'cors'
 import { errors } from 'celebrate'
 import { pagination } from 'typeorm-pagination'
 import routes from './routes'
-import AppError from '../errors/AppError'
-import '../typeorm/'
-import uploadConfig from '../../config/upload'
+import AppError from '../../errors/AppError'
+import '../typeorm'
+import uploadConfig from '../../../config/upload'
 import rateLimiter from './middlewares/rateLimiter'
 
 const app = express()
