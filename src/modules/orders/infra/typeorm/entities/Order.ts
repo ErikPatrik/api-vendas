@@ -1,5 +1,5 @@
 import { CreateDateColumn, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-import Customer from "../../../customers/infra/typeorm/entities/Customer";
+import Customer from "../../../../customers/infra/typeorm/entities/Customer";
 import OrdersProducts from "./OrdersProducts";
 
 @Entity('orders')

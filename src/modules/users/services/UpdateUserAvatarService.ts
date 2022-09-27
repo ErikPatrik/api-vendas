@@ -3,8 +3,8 @@ import AppError from "../../../shared/errors/AppError"
 import path from 'path'
 import uploadConfig from '../../../config/upload'
 import fs from 'fs'
-import User from "../typeorm/entities/Users"
-import { UsersRepository } from "../typeorm/repositories/UsersRepository"
+import User from "../../users/infra/typeorm/entities/Users"
+import { UsersRepository } from "../../users/infra/typeorm/repositories/UsersRepository"
 
 interface Irequest {
     user_id: string
